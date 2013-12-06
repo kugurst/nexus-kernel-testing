@@ -4,8 +4,8 @@
 
 int main() {
     int i;
-    char *src = "sdcard/Download/";
-    char *dest = "/sdcard/Download/dest.txt";
+    char *src = "/data/test.txt";
+    char *dest = "/data/test1.txt";
     printf("Return: %ld\n", ext4_cowcopy(src, dest));
     char cwd[1024];
     if (getcwd(cwd, sizeof(cwd)) != NULL)
