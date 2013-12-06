@@ -4,8 +4,8 @@
 
 int main() {
     int i;
-    char *src = "/data/test.txt";
-    char *dest = "/data/test1.txt";
+    char *src = "/data/local/tmp/test.txt";
+    char *dest = "/data/local/tmp/test1.txt";
     printf("Return: %ld\n", ext4_cowcopy(src, dest));
     char cwd[1024];
     if (getcwd(cwd, sizeof(cwd)) != NULL)
